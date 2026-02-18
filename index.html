@@ -2,35 +2,38 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>VIP CASINO PRO - CRYPTO</title>
+    <title>NANO CASINO VIP - CRYPTO</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
-        <div class="logo">GOLDEN<span>SLOT</span></div>
-        <button id="connectWallet" class="wallet-btn">POŁĄCZ PORTFEL (WEB3)</button>
+        <div class="logo">NANO<span>CASINO</span></div>
+        <div class="header-right">
+            <button onclick="openGame('deposit')" class="wallet-btn" style="margin-right: 10px; background: #00f2ff; color: black;">WPŁAĆ BTC</button>
+            <button id="connectWallet" class="wallet-btn">POŁĄCZ PORTFEL (WEB3)</button>
+        </div>
     </div>
 
     <div class="games-grid">
         <div class="game-card">
             <img src="https://img.icons8.com/color/96/blackjack.png" alt="BJ">
             <h3>BLACKJACK</h3>
-            <button onclick="openGame('bj')">GRAJ</button>
+            <button class="play-btn" onclick="openGame('bj')">GRAJ</button>
         </div>
         <div class="game-card">
             <img src="https://img.icons8.com/color/96/poker.png" alt="Poker">
             <h3>POKER LIVE</h3>
-            <button onclick="openGame('poker')">GRAJ</button>
+            <button class="play-btn" onclick="openGame('poker')">GRAJ</button>
         </div>
         <div class="game-card">
             <img src="https://img.icons8.com/color/96/roulette.png" alt="Roulette">
             <h3>RULETKA B/R</h3>
-            <button onclick="openGame('roulette')">GRAJ</button>
+            <button class="play-btn" onclick="openGame('roulette')">GRAJ</button>
         </div>
         <div class="game-card highlight">
             <img src="https://img.icons8.com/color/96/slot-machine.png" alt="Slot">
-            <h3>777 SLOT MACHINE</h3>
-            <button onclick="openGame('slot')">GRAJ</button>
+            <h3>777 NANO SLOTS</h3>
+            <button class="play-btn" onclick="openGame('slot')">GRAJ</button>
         </div>
     </div>
 
