@@ -2,34 +2,46 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino Pro - Live Betting</title>
+    <title>VIP CASINO PRO - CRYPTO</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">CASINO<span>PRO</span></div>
-        <div class="balance">SALDO: 5000.00 PLN</div>
+    <div class="header">
+        <div class="logo">GOLDEN<span>SLOT</span></div>
+        <button id="connectWallet" class="wallet-btn">POŁĄCZ PORTFEL (WEB3)</button>
     </div>
-    
-    <div class="main-container">
-        <div class="video-placeholder">
-            <div id="status-overlay">OCZEKIWANIE NA ROZDANIE...</div>
-            <div id="result-display">?</div>
-        </div>
 
-        <div class="betting-panel">
-            <div class="tabs">
-                <div class="tab active">ZAKŁADY</div>
-                <div class="tab">HISTORIA</div>
-            </div>
-            <div class="bet-options">
-                <button class="bet-btn" onclick="placeBet('RED')">CZERWONE (2.0)</button>
-                <button class="bet-btn" onclick="placeBet('BLACK')">CZARNE (2.0)</button>
-                <button class="bet-btn gold" id="spinBtn">POSTAW ZAKŁAD</button>
-            </div>
+    <div class="games-grid">
+        <div class="game-card">
+            <img src="https://img.icons8.com/color/96/blackjack.png" alt="BJ">
+            <h3>BLACKJACK</h3>
+            <button onclick="openGame('bj')">GRAJ</button>
+        </div>
+        <div class="game-card">
+            <img src="https://img.icons8.com/color/96/poker.png" alt="Poker">
+            <h3>POKER LIVE</h3>
+            <button onclick="openGame('poker')">GRAJ</button>
+        </div>
+        <div class="game-card">
+            <img src="https://img.icons8.com/color/96/roulette.png" alt="Roulette">
+            <h3>RULETKA B/R</h3>
+            <button onclick="openGame('roulette')">GRAJ</button>
+        </div>
+        <div class="game-card highlight">
+            <img src="https://img.icons8.com/color/96/slot-machine.png" alt="Slot">
+            <h3>777 SLOT MACHINE</h3>
+            <button onclick="openGame('slot')">GRAJ</button>
         </div>
     </div>
+
+    <div id="game-window" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeGame()">&times;</span>
+            <div id="game-engine-render"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
