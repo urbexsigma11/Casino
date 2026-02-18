@@ -2,14 +2,33 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Hacker Roulette v1.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Pro - Live Betting</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>SYSTEM TERMINAL: ROULETTE</h1>
-        <div id="display">READY TO SPIN...</div>
-        <button id="spinBtn">INICJUJ LOSOWANIE</button>
+    <div class="navbar">
+        <div class="logo">CASINO<span>PRO</span></div>
+        <div class="balance">SALDO: 5000.00 PLN</div>
+    </div>
+    
+    <div class="main-container">
+        <div class="video-placeholder">
+            <div id="status-overlay">OCZEKIWANIE NA ROZDANIE...</div>
+            <div id="result-display">?</div>
+        </div>
+
+        <div class="betting-panel">
+            <div class="tabs">
+                <div class="tab active">ZAKŁADY</div>
+                <div class="tab">HISTORIA</div>
+            </div>
+            <div class="bet-options">
+                <button class="bet-btn" onclick="placeBet('RED')">CZERWONE (2.0)</button>
+                <button class="bet-btn" onclick="placeBet('BLACK')">CZARNE (2.0)</button>
+                <button class="bet-btn gold" id="spinBtn">POSTAW ZAKŁAD</button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
