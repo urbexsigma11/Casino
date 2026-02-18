@@ -2,15 +2,16 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>NANO CASINO VIP - CRYPTO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NANO CASINO VIP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
         <div class="logo">NANO<span>CASINO</span></div>
         <div class="header-right">
-            <button onclick="openGame('deposit')" class="wallet-btn" style="margin-right: 10px; background: #00f2ff; color: black;">WPŁAĆ BTC</button>
-            <button id="connectWallet" class="wallet-btn">POŁĄCZ PORTFEL (WEB3)</button>
+            <div id="balance-display">SALDO: 0.000000 BTC</div>
+            <button onclick="openGame('deposit')" class="wallet-btn deposit-btn">WPŁAĆ BTC</button>
         </div>
     </div>
 
@@ -44,7 +45,6 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
